@@ -1,0 +1,30 @@
+.clients-list {
+  display: flex;
+}
+
+.clients-list__item {
+  &:not(:last-child) {
+    margin-right: 30px;
+  }
+}
+
+.clients-list__link {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 170px;
+  height: 92px;
+  color: var(--social-icon);
+  border: 1px solid currentColor;
+  border-radius: 4px;
+  fill: currentColor;
+  transition: color 250ms var(--time-declaration),
+    border 250ms var(--time-declaration), fill 250ms var(--time-declaration);
+
+  &:hover,
+  &:focus {
+    color: var(--accent-color);
+    border: 1px solid currentColor;
+    fill: currentColor;
+  }
+}

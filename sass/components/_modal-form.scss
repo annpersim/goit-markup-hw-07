@@ -1,0 +1,212 @@
+.modal {
+  position: absolute;
+  padding: 40px;
+  min-height: 581px;
+  min-width: 528px;
+  background-color: var(--primary-background);
+  top: 50%;
+  left: 50%;
+  box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
+    0px 2px 1px rgba(0, 0, 0, 0.2);
+  border-radius: 4px;
+  transform: translate(-50%, -50%);
+}
+
+.modal__btn {
+  position: absolute;
+  right: 8px;
+  top: 8px;
+  display: flex;
+  align-items: center;
+  cursor: pointer;
+  width: 30px;
+  height: 30px;
+  background-color: var(--primary-background);
+  border: 1px solid rgba(0, 0, 0, 0.1);
+  border-radius: 50%;
+  transition: fill 250ms var(--time-declaration);
+
+  &:focus,
+  &:hover {
+    fill: var(--accent-color);
+  }
+}
+
+.modal__text {
+  margin-bottom: 12px;
+  color: var(#212121);
+  font-weight: 700;
+  font-size: 20px;
+  line-height: 1.15;
+  text-align: center;
+  letter-spacing: 0.03em;
+}
+
+.form {
+  width: 448px;
+}
+.form__div {
+  text-align: left;
+  margin-bottom: 10px;
+}
+
+.form__div-check {
+  text-align: left;
+  margin-bottom: 20px;
+}
+
+.form__text {
+  display: block;
+  margin-bottom: 4px;
+  color: var(--primary-text-color);
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 1.17;
+  letter-spacing: 0.01em;
+}
+
+.form__field {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+}
+
+.form__icon {
+  position: absolute;
+  display: inline-block;
+  top: 50%;
+  left: 12px;
+  transform: translateY(-50%);
+  transition: fill 250ms var(--time-declaration);
+}
+
+.form__input {
+  width: 100%;
+  height: 40px;
+  padding: 12px 42px;
+  border: 1px solid rgba(33, 33, 33, 0.2);
+  border-radius: 4px;
+  transition: border 250ms var(--time-declaration);
+  color: var(#212121);
+  font-weight: 400;
+  font-size: 15px;
+  line-height: 1.17;
+  letter-spacing: 0.01em;
+
+  &:focus {
+    outline: none;
+    border: 1px solid var(--accent-color);
+    fill: var(--accent-color);
+  }
+}
+
+.form__input:focus + .form__icon {
+  fill: var(--accent-color);
+}
+
+.form__area {
+  resize: none;
+  padding: 12px 16px;
+  width: 100%;
+  height: 120px;
+  border: 1px solid rgba(33, 33, 33, 0.2);
+  border-radius: 4px;
+  transition: border 250ms var(--time-declaration);
+  color: var(#212121);
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 1.17;
+  letter-spacing: 0.01em;
+
+  &:focus {
+    outline: none;
+    border: 1px solid var(--accent-color);
+  }
+
+  &::placeholder {
+    color: rgba(117, 117, 117, 0.5);
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 1.17;
+    letter-spacing: 0.01em;
+  }
+}
+
+.form__check-area {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 30px;
+}
+
+.form__checkbox {
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  border: 0;
+  padding: 0;
+  clip: rect(0 0 0 0);
+  overflow: hidden;
+}
+
+.form__checkbox + .form__check-svg {
+  border: 2px solid #000000;
+  border-radius: 2px;
+  margin-right: 8px;
+  transition: border 250ms var(--time-declaration),
+    background-color 250ms var(--time-declaration),
+    fill 250ms var(--time-declaration);
+}
+
+.form__checkbox:checked + .form__check-svg {
+  fill: var(--primary-background);
+  background-color: var(--accent-color);
+  border: none;
+}
+
+.form__checkbox:focus + .form__check-svg {
+  border: 2px solid var(--accent-color);
+}
+
+.form__checkbox:focus:checked + .form__check-svg {
+  border: none;
+}
+
+.form__license {
+  color: var(--primary-text-color);
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 1.71;
+  letter-spacing: 0.03em;
+}
+
+.form__link {
+  color: var(--accent-color);
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 1.71;
+  letter-spacing: 0.03em;
+}
+
+.form__btn {
+  cursor: pointer;
+  border-style: none;
+  padding: 10px 52px;
+  border-radius: 4px;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+  background-color: var(--accent-color);
+  color: var(--primary-background);
+  font-family: inherit;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 1.875;
+  letter-spacing: 0.06em;
+  transition: box-shadow 250ms var(--time-declaration),
+    background-color 250ms var(--time-declaration);
+
+  &:focus,
+  &:hover {
+    background-color: var(--button-active);
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+  }
+}

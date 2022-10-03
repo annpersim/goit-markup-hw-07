@@ -10,7 +10,7 @@
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/1.1.0/modern-normalize.min.css"
     />
-    <link rel="stylesheet" href="./css/styles.css" />
+    <link rel="stylesheet" href="./css/main.min.css" />
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
@@ -19,7 +19,7 @@
     <header class="header">
       <div class="header__main-nav container vertical">
         <a href="./index.html" class="logo header__logo"
-          ><span class="logo__span">Web</span>Studio</a
+          ><span class="header__span">Web</span>Studio</a
         >
         <nav class="site-nav">
           <ul class="site-nav__list">
@@ -29,7 +29,9 @@
             <li class="site-nav__item">
               <a href="./portfolio.html" class="site-nav__link">Портфоліо</a>
             </li>
-            <li class="site-nav__item"><a href="" class="site-nav__link">Контакти</a></li>
+            <li class="site-nav__item">
+              <a href="" class="site-nav__link">Контакти</a>
+            </li>
           </ul>
         </nav>
         <ul class="list-contact">
@@ -52,19 +54,23 @@
       </div>
     </header>
     <main>
-      <section class="hero section overlay">
+      <section class="hero overlay">
         <div class="container vertical">
           <h1 class="hero__title">
             Ефективні рішення для <br />
             вашого бізнесу
           </h1>
-          <button type="button" class="hero__btn" data-modal-open>Замовити послугу</button>
+          <button type="button" class="hero__btn" data-modal-open>
+            Замовити послугу
+          </button>
 
           <div class="backdrop is-hidden" data-modal>
             <div class="modal">
               <button class="modal__btn" data-modal-close>
                 <svg width="18" height="18">
-                  <use href="./images/icons.svg#icon-close-black-18dp-2-1-1"></use>
+                  <use
+                    href="./images/icons.svg#icon-close-black-18dp-2-1-1"
+                  ></use>
                 </svg>
               </button>
 
@@ -108,7 +114,11 @@
                   </label>
                 </div>
                 <label class="form__check-area">
-                  <input class="form__checkbox visually-hidden" type="checkbox" name="license" />
+                  <input
+                    class="form__checkbox visually-hidden"
+                    type="checkbox"
+                    name="license"
+                  />
                   <svg width="16" height="15" class="form__check-svg">
                     <use href="./images/icons.svg#icon-icon-check"></use>
                   </svg>
@@ -137,7 +147,8 @@
               </div>
               <h3 class="feature-list__title">УВАГА ДО ДЕТАЛЕЙ</h3>
               <p class="feature-list__text">
-                Ідейні міркування, і навіть початок повсякденної роботи з формування позиції.
+                Ідейні міркування, і навіть початок повсякденної роботи з
+                формування позиції.
               </p>
             </li>
 
@@ -149,7 +160,8 @@
               </div>
               <h3 class="feature-list__title">ПУНКТУАЛЬНІСТЬ</h3>
               <p class="feature-list__text">
-                Завдання організації, особливо рамки і місце навчання кадрів тягне у себе.
+                Завдання організації, особливо рамки і місце навчання кадрів
+                тягне у себе.
               </p>
             </li>
 
@@ -173,7 +185,8 @@
               </div>
               <h3 class="feature-list__title">СУЧАСНІ ТЕХНОЛОГІЇ</h3>
               <p class="feature-list__text">
-                Значимість цих проблем настільки очевидна, що реалізація планових завдань.
+                Значимість цих проблем настільки очевидна, що реалізація
+                планових завдань.
               </p>
             </li>
           </ul>
@@ -186,7 +199,11 @@
           <ul class="activity-list">
             <li class="activity-list__item">
               <div class="activity-list__overlay">
-                <img src="./images/1.jpg" alt="процес написання коду" width="370" />
+                <img
+                  src="./images/1.jpg"
+                  alt="процес написання коду"
+                  width="370"
+                />
                 <div class="activity-list__background">
                   <p class="activity-list__descr">Десктопні додатки</p>
                 </div>
@@ -194,7 +211,11 @@
             </li>
             <li class="activity-list__item">
               <div class="activity-list__overlay">
-                <img src="./images/2.jpg" alt="процес створення макету додатку" width="370" />
+                <img
+                  src="./images/2.jpg"
+                  alt="процес створення макету додатку"
+                  width="370"
+                />
                 <div class="activity-list__background">
                   <p class="activity-list__descr">Мобільні додатки</p>
                 </div>
@@ -202,7 +223,11 @@
             </li>
             <li class="activity-list__item">
               <div class="activity-list__overlay">
-                <img src="./images/3.jpg" alt="обрання кольорової гами" width="370" />
+                <img
+                  src="./images/3.jpg"
+                  alt="обрання кольорової гами"
+                  width="370"
+                />
                 <div class="activity-list__background">
                   <p class="activity-list__descr">Дизайнерські рішення</p>
                 </div>
@@ -296,7 +321,11 @@
             </li>
 
             <li class="unit-list__item">
-              <img src="./images/6.jpg" alt="чоловік посміхається" width="270" />
+              <img
+                src="./images/6.jpg"
+                alt="чоловік посміхається"
+                width="270"
+              />
               <div class="unit-list__position">
                 <h3 class="unit-list__name">Микола Тарасов</h3>
                 <p class="unit-list__job">Marketing</p>
@@ -335,7 +364,11 @@
             </li>
 
             <li class="unit-list__item">
-              <img src="./images/7.jpg" alt="чоловік зі схрещеними руками" width="270" />
+              <img
+                src="./images/7.jpg"
+                alt="чоловік зі схрещеними руками"
+                width="270"
+              />
               <div class="unit-list__position">
                 <h3 class="unit-list__name">Михайло Єрмаков</h3>
                 <p class="unit-list__job">UI Designer</p>
@@ -432,11 +465,13 @@
     <footer class="footer">
       <div class="container vertical footer__content">
         <div class="footer__info">
-          <a href="./index.html" class="footer-logo footer__logo"
-            ><span class="footer-logo__span">Web</span>Studio</a
+          <a href="./index.html" class="logo footer__logo"
+            ><span class="footer__span">Web</span>Studio</a
           >
           <address class="footer-address">
-            <span class="footer-address__span">м. Київ, пр-т Лесі Українки, 26</span>
+            <span class="footer-address__span"
+              >м. Київ, пр-т Лесі Українки, 26</span
+            >
             <ul class="footer-contact_list">
               <li class="footer-contact_item">
                 <a href="mailto:info@devstudio.com" class="footer-contact__link"
@@ -444,7 +479,9 @@
                 >
               </li>
               <li class="footer-contact_item">
-                <a href="tel:+380961111111" class="footer-contact__link">+38 096 111 11 11</a>
+                <a href="tel:+380961111111" class="footer-contact__link"
+                  >+38 096 111 11 11</a
+                >
               </li>
             </ul>
           </address>
@@ -488,7 +525,12 @@
         <div>
           <p class="form-sub-title">Підпишіться на розсилку</p>
           <form class="footer-form">
-            <input type="email" class="footer-form__input" name="email" placeholder="E-mail" />
+            <input
+              type="email"
+              class="footer-form__input"
+              name="email"
+              placeholder="E-mail"
+            />
             <button type="submit" class="footer-form__btn">
               Підписатися
               <svg class="footer-form__icon" width="24" height="24">
