@@ -18,8 +18,8 @@
   border: 1px solid currentColor;
   border-radius: 4px;
   fill: currentColor;
-  transition: color 250ms var(--time-declaration),
-    border 250ms var(--time-declaration), fill 250ms var(--time-declaration);
+  transition: color 250ms var(--time-declaration), border 250ms var(--time-declaration),
+    fill 250ms var(--time-declaration);
 
   &:hover,
   &:focus {

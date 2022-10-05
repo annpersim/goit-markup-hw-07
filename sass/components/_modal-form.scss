@@ -153,8 +153,7 @@
   border: 2px solid #000000;
   border-radius: 2px;
   margin-right: 8px;
-  transition: border 250ms var(--time-declaration),
-    background-color 250ms var(--time-declaration),
+  transition: border 250ms var(--time-declaration), background-color 250ms var(--time-declaration),
     fill 250ms var(--time-declaration);
 }
 

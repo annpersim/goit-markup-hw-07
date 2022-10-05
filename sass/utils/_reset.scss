@@ -1,6 +1,6 @@
 body {
-    font-family: Roboto, sans-serif;
-    letter-spacing: 0.003em;
+  font-family: var(--main-font-family);
+  letter-spacing: 0.003em;
 }
 
 h1,
@@ -8,20 +8,20 @@ h2,
 h3,
 p,
 ul {
-    margin: 0;
-    padding: 0;
+  margin: 0;
+  padding: 0;
 }
 
 img {
-    display: block;
-    max-width: 100%;
-    height: auto;
+  display: block;
+  max-width: 100%;
+  height: auto;
 }
 
 li {
-    list-style: none;
+  list-style: none;
 }
 
 a {
-    text-decoration: none;
+  text-decoration: none;
 }
